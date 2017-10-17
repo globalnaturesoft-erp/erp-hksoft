@@ -1,0 +1,28 @@
+.top-menu-links .links li a, .btn-normal, .site-footer .links li a {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+}
+.main-menu ul li a, .clock .clock-wrapper .tile .txt, .scrolldown a {
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+}
+.section .content .c-columns .c-title h2, .section .content .title-desc h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+}
+.section-home .content .title-desc .title h2 {
+	font-size: 39px;
+}
+.section .content .title-desc h1, .section .content .title-desc h2, .section .content .title-desc h3, .section .content .title-desc h4 {
+	margin-top: 0.25em;
+}
+.section .cta-btns .btn, .btn-normal {
+	border-radius: 5px;
+}
+.section-slider .content .slider-wrapper .items-slides .swiper-slide .slideitem-wrapper .item-desc h3 {
+	font-family: "Roboto", sans-serif;
+	font-size: 25px;
+}
+.header-top .logo-wrapper .logo img {
+	height: 70px;
+}

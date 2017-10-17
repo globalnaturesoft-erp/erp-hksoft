@@ -1,0 +1,13 @@
+<div class="page-cover">
+  <!-- Cover Background -->
+  <% if params[:controller] == "erp/hksoft/frontend/home" && params[:action] == "index" %>
+  <div class="cover-bg pos-abs full-size bg-img  bg-blur-0" data-image-src="/hksoft/img/img-hksoft.png"></div>
+  <% end %>
+  <!-- Transluscent mask as filter -->
+  <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
+  <!-- Image mask layer -->
+  <% if params[:controller] == "erp/hksoft/frontend/home" && params[:action] == "index" %>
+  <div class="cover-bg-mask opacity-5 pos-abs full-size bg-img" data-image-src="/hksoft/img/bg-gradient1.jpg"></div>
+  <% end %>
+  <div class="cover-bg-mask pos-abs full-size bg-img" data-image-src="/hksoft/img/bg-layer.png"></div>
+</div>

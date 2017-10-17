@@ -1,0 +1,85 @@
+<header class="hh-header header-top">
+  <!-- Begin of logo -->
+  <div class="logo-wrapper">
+    <a href="<%= erp_hksoft.root_path %>" title="HK-Soft Giải Pháp Phần Mềm Toàn Diện">
+      <h2 class="logo">
+          <span class="logo-img">
+            <img class="light-logo" src="/hksoft/img/logo-hksoft-02.svg" alt="Logo">
+          </span>
+      </h2>
+    </a>
+  </div>
+  <!-- End of logo -->
+  <!-- Begin of top menu -->
+  <% if params[:controller] == "erp/hksoft/frontend/home" && params[:action] == "index" %>
+  <nav class="top-menu-links">
+    <ul class="links">
+      <li><%= link_to "Trang Chủ", "#trang-chu" %></li>
+      <li><%= link_to "Giới Thiệu", "#gioi-thieu" %></li>
+      <li><%= link_to "Dịch Vụ", "#dich-vu" %></li>
+      <li><%= link_to "Liên Hệ", "#lien-he" %></li>
+    </ul>
+  </nav>
+  <% else %>
+  <nav class="top-menu-links">
+    <ul class="links">
+      <li><%= link_to "Trang Chủ", erp_hksoft.root_path + "#trang-chu" %></li>
+      <li><%= link_to "Giới Thiệu", erp_hksoft.root_path + "#gioi-thieu" %></li>
+      <li><%= link_to "Dịch Vụ", erp_hksoft.root_path + "#dich-vu" %></li>
+      <li><%= link_to "Liên Hệ", erp_hksoft.root_path + "#lien-he" %></li>
+    </ul>
+  </nav>
+  <% end %>
+  <!-- End of top menu -->
+  <!-- Begin of menu icon -->
+  <a class="menu-icon">
+    <div class="bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </a>
+  <!-- End of menu icon -->
+  <% if params[:controller] == "erp/hksoft/frontend/home" && params[:action] == "index" %>
+  <nav class="main-menu">
+    <ul class="links" id="qmenu">
+      <li data-menuanchor="trang-chu">
+        <a href="#trang-chu">
+          <span class="txt">Trang&nbsp;Chủ</span>
+          <i class="icon ion-ios-home-outline"></i>
+        </a>
+      </li>
+      <li data-menuanchor="gioi-thieu">
+        <a href="#gioi-thieu">
+          <span class="txt">Giới&nbsp;Thiệu</span>
+          <i class="icon ion-ios-information-outline"></i>
+        </a>
+      </li>
+      <li data-menuanchor="dich-vu">
+        <a href="#dich-vu">
+          <span class="txt">Dịch&nbsp;Vụ</span>
+          <i class="icon ion-ios-list-outline"></i>
+        </a>
+      </li>
+      <li data-menuanchor="du-an">
+        <a href="#du-an">
+          <span class="txt">Dự&nbsp;Án</span>
+          <i class="icon ion-ios-albums-outline"></i>
+        </a>
+      </li>
+      <li data-menuanchor="dang-ky">
+        <a href="#dang-ky">
+          <span class="txt">Đăng&nbsp;Ký</span>
+          <i class="icon ion-ios-compose-outline"></i>
+        </a>
+      </li>
+      <li data-menuanchor="lien-he">
+        <a href="#lien-he">
+          <span class="txt">Liên&nbsp;Hệ</span>
+          <i class="icon ion-ios-telephone-outline"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <% end %>
+</header>

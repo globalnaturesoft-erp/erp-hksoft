@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<!-- Page Title Here -->
+	<title>Trang Chủ | Phần Mềm Hoang Khang Incotech</title>
+	
+	<!-- Page Keywords Here -->
+	<meta name="keywords" content="thiet ke web, thiết kế web, thiet ke website, thiết kế website, phần mềm quản lý, domain, hosting, thiết kế logo, dịch vụ quảng cáo, seo">
+	<!-- Page Description Here -->
+	<meta name="description" content="HKSoft cung cấp dịch vụ thiết kế web chuẩn SEO. Dịch vụ Domain, Hosting, Thiết kế logo, Banner, SEO, Google Adwords.">
+	
+	<!-- Disable screen scaling-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+	
+	<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+	<%= favicon_link_tag '/hksoft/img/apple-touch-icon.png', rel: 'apple-touch-icon' %>
+	<%= favicon_link_tag '/hksoft/img/favicon.png', rel: 'icon', type: '/hksoft/img/favicon/png' %>
+  
+	<!-- Web fonts and Web Icons -->
+	<%= stylesheet_link_tag "/hksoft/fonts/opensans/stylesheet.css" %>
+	<%= stylesheet_link_tag "/hksoft/fonts/montserrat/stylesheet.css" %>
+	<%= stylesheet_link_tag "/hksoft/fonts/roboto/stylesheet.css" %>
+	<%= stylesheet_link_tag "/hksoft/fonts/bebas/stylesheet.css" %>
+	<%= stylesheet_link_tag "/hksoft/fonts/ionicons.min.css" %>
+	  
+	<!-- Vendor CSS style -->
+	<%= stylesheet_link_tag "/hksoft/css/pageloader.css" %>
+	
+	<!-- Uncomment below to load individualy vendor CSS -->
+	<%= stylesheet_link_tag "/hksoft/css/foundation.min.css" %>
+	<%= stylesheet_link_tag "/hksoft/js/vendor/swiper.min.css" %>
+	<%= stylesheet_link_tag "/hksoft/js/vendor/jquery.fullpage.min.css" %>
+	<%= stylesheet_link_tag "/hksoft/js/vegas/vegas.min.css" %>
+	
+	<!-- Main CSS files -->
+	<%= stylesheet_link_tag "/hksoft/css/main.css" %>
+	<% if params[:controller] == "erp/hksoft/frontend/services" && params[:action] == "website_design_development" %>
+	<%= stylesheet_link_tag "/hksoft/css/style-color1.css" %>
+	<% end %>
+	<%= stylesheet_link_tag "/hksoft/css/custom.css" %>
+	
+	<!-- alt layout -->
+	<!-- <link rel="stylesheet" href="./css/style-color5.css"> -->
+	<%= javascript_include_tag "/hksoft/js/vendor/modernizr-2.7.1.min.js" %>	
+</head>
+
+<body id="menu" class="hh-body alt-bg left-light">
+	<!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	<!-- Page Loader : just comment these lines to remove it -->
+	<div class="page-loader" id="page-loader">
+		<div>
+			<div class="icon ion-spin"></div>
+			<p>Đang kết nối</p>
+		</div>
+	</div>
+	
+	<!-- BEGIN OF site header Menu -->
+	<%= render "erp/hksoft/frontend/modules/header" %>
+	<!-- END OF site header Menu-->
+	
+	<!-- BEGIN OF page cover -->
+	<%= render "erp/hksoft/frontend/modules/page_covers" %>
+	<!--END OF page cover -->
+
+	<!-- BEGIN OF page main content -->
+	<%= yield %>
+	<!-- END OF page main content -->
+	
+	<!-- BEGIN OF page footer -->
+	<%= render "erp/hksoft/frontend/modules/footer" %>
+	<!-- END OF site footer -->	
+	
+	<!-- scripts -->
+	<%= render "erp/hksoft/frontend/modules/javascripts" %>
+</body>
+
+</html>
