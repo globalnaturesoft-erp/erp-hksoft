@@ -4,7 +4,7 @@
     <a href="<%= erp_hksoft.root_path %>" title="HK-Soft Giải Pháp Phần Mềm Toàn Diện">
       <h2 class="logo">
           <span class="logo-img">
-            <img class="light-logo" src="/hksoft/img/logo-hksoft-02.svg" alt="Logo">
+            <img class="light-logo" src="/hksoft/img/logo-hksoft.svg" alt="HK-Soft Giải Pháp Phần Mềm Toàn Diện">
           </span>
       </h2>
     </a>
@@ -14,7 +14,7 @@
   <% if params[:controller] == "erp/hksoft/frontend/home" && params[:action] == "index" %>
   <nav class="top-menu-links">
     <ul class="links">
-      <li><%= link_to "Trang Chủ", "#trang-chu" %></li>
+      <li><%= link_to "Trang Chủ", erp_hksoft.root_path %></li>
       <li><%= link_to "Giới Thiệu", "#gioi-thieu" %></li>
       <li><%= link_to "Dịch Vụ", "#dich-vu" %></li>
       <li><%= link_to "Liên Hệ", "#lien-he" %></li>
@@ -23,7 +23,7 @@
   <% else %>
   <nav class="top-menu-links">
     <ul class="links">
-      <li><%= link_to "Trang Chủ", erp_hksoft.root_path + "#trang-chu" %></li>
+      <li><%= link_to "Trang Chủ", erp_hksoft.root_path %></li>
       <li><%= link_to "Giới Thiệu", erp_hksoft.root_path + "#gioi-thieu" %></li>
       <li><%= link_to "Dịch Vụ", erp_hksoft.root_path + "#dich-vu" %></li>
       <li><%= link_to "Liên Hệ", erp_hksoft.root_path + "#lien-he" %></li>
@@ -55,24 +55,24 @@
           <i class="icon ion-ios-information-outline"></i>
         </a>
       </li>
-      <li data-menuanchor="dich-vu">
-        <a href="#dich-vu">
-          <span class="txt">Dịch&nbsp;Vụ</span>
+      <li data-menuanchor="tong-quan">
+        <a href="#tong-quan">
+          <span class="txt">Tổng&nbsp;Quan</span>
           <i class="icon ion-ios-list-outline"></i>
         </a>
       </li>
-      <li data-menuanchor="du-an">
-        <a href="#du-an">
+      <li data-menuanchor="dich-vu">
+        <a href="#dich-vu">
+          <span class="txt">Dịch&nbsp;Vụ</span>
+          <i class="icon ion-ios-pricetags-outline"></i>
+        </a>
+      </li>
+      <li data-menuanchor="du-an-tieu-bieu">
+        <a href="#du-an-tieu-bieu">
           <span class="txt">Dự&nbsp;Án</span>
           <i class="icon ion-ios-albums-outline"></i>
         </a>
-      </li>
-      <li data-menuanchor="dang-ky">
-        <a href="#dang-ky">
-          <span class="txt">Đăng&nbsp;Ký</span>
-          <i class="icon ion-ios-compose-outline"></i>
-        </a>
-      </li>
+      </li>      
       <li data-menuanchor="lien-he">
         <a href="#lien-he">
           <span class="txt">Liên&nbsp;Hệ</span>

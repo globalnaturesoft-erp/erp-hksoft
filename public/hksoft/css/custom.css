@@ -27,5 +27,46 @@ body {
 	font-size: 25px;
 }
 .header-top .logo-wrapper .logo img {
-	height: 70px;
+	height: 60px;
+}
+.section .content .c-item-list li .item-desc h3 {
+	font-family: "Segoe UI", sans-serif;
+	text-shadow: 0 0 8px rgba(0,0,0,0.25);
+}
+.section .content .c-item-list li .item-desc h4 {
+	font-family: "Segoe UI", sans-serif;
+	text-shadow: 0 0 8px rgba(0,0,0,0.25);
+	font-size: 16px;
+}
+.section .content .c-columns .c-aside .c-wrapper h3 {
+	font-family: "Segoe UI", sans-serif;
+}
+.section-slider.active .anim .items-slides .swiper-slide.swiper-slide-active .slideitem-wrapper .item-img {
+	top: 24px;
+    bottom: 24px;
+}
+.section-slider .content .slider-wrapper .items-slides .swiper-slide .slideitem-wrapper .item-img:after {
+	top: 19px;
+	right: 0px;
+    bottom: 19px;
+}
+.site-footer .note .marked.no-background, .site-footer .note a.no-background {
+	background: none;
+	color: #fff;
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: normal;
+}
+.section-contact .content .item-desc a.no-background {
+	background: none;
+	color: #fff;
+	font-weight: normal;
+}
+.top-menu-links .links {
+	padding-top: 20px;
+}
+.header-top .logo-wrapper {
+	padding-top: 20px;
+}
+p {
+	font-size: 15px;
 }

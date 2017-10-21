@@ -8,16 +8,16 @@ module Erp
         def web_based_software_development
         end
         
-        def domain
-        end
-        
-        def hosting
+        def domain_hosting
         end
         
         def seo_adwords
         end
         
-        def design
+        def graphic_profile_design
+        end
+        
+        def google_mail
         end
       end
     end
