@@ -62,11 +62,30 @@ body {
 	font-weight: normal;
 }
 .top-menu-links .links {
-	padding-top: 20px;
+	padding-top: 16px;
 }
-.header-top .logo-wrapper {
-	padding-top: 20px;
+.header-top.scrolled .logo-wrapper, .header-top .logo-wrapper {
+	padding-top: 10px;
 }
 p {
 	font-size: 15px;
 }
+.section .content .title-desc h3 {
+	font-size: 2.5rem;
+}
+/* Services Detail */
+.section.item-website-design-development {
+  background: url("../img/website-design-development-01.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative; }
+  .section.item-website-design-development .section-bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(46, 55, 99, 0.5); }
